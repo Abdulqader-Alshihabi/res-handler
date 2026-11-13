@@ -22,9 +22,9 @@ Role: Backend & AI Search Software Engineer
 
 ## Executive Summary
 
-The Research Commercialisation Platform (`res-handler`) is a high-performance web platform engineered to bridge the gap between academic innovation and market demand. It catalogs university researchers and published scientific literature, transforming complex research papers into actionable commercial Research Tickets («بطاقات بحثية») tailored for governmental agencies and industrial enterprise partners.
+The Research Commercialisation & Interdisciplinary Intelligence Platform (`res-handler`) is a high-performance enterprise system engineered to bridge academic innovation, cross-departmental collaboration, and market commercialization demand. The platform aggregates the university's complete research corpus, targets relevant industrial and governmental partners, uncovers latent interdisciplinary research synergies, and forms the foundation for 17 specialized institutional Expert Houses (بيوت خبرة).
 
-Engineered with Go (Golang 1.25), htmx, PostgreSQL, and `pgvector`, the platform eliminates client-side JavaScript bundle overhead by utilizing high-speed server-rendered HTML with reactive DOM swaps. It features an AI-driven Reverse Problem-to-Solution semantic matching engine, allowing outside organizations to input real-world challenges in natural language and instantly discover matching university patents, research corpus, and faculty consultants.
+Engineered with Go (Golang 1.25), htmx, PostgreSQL, and `pgvector`, the platform eliminates client-side JavaScript bundle overhead through high-speed server-rendered HTML with reactive DOM swaps. It provides an AI-driven Reverse Problem-to-Solution semantic matching engine alongside an Interdisciplinary Cross-Pollination Engine that matches disparate faculty competencies (e.g., Computer Science scholars publishing in NLP with Arabic Linguistics researchers exploring computational text analysis) to propose joint high-impact research initiatives and commercial consulting services.
 
 ---
 
@@ -65,10 +65,11 @@ Engineered with Go (Golang 1.25), htmx, PostgreSQL, and `pgvector`, the platform
 - Leveraged `htmx` for dynamic, reactive UI updates, delivering instantaneous search filtering, ticket bookmarking, and modal displays via server-rendered HTML partials.
 - Clean separation of concerns across Go packages (`internal/handlers`, `internal/render`, `internal/embed`, `internal/middleware`).
 
-### 2. AI-Powered Reverse Problem-to-Solution Matching
-- Built a semantic discovery engine using PostgreSQL with the `pgvector` extension and Azure OpenAI vector embeddings.
-- Enables industrial and government stakeholders to describe business bottlenecks or industrial problems in everyday Arabic or English terminology, semantically mapping queries to university scientific research using vector cosine similarity.
-- Bypasses the limitations of traditional keyword search by matching conceptual intent rather than literal academic terminology.
+### 2. AI-Powered Reverse Problem-to-Solution & Interdisciplinary Cross-Pollination
+- Built a high-dimensional vector discovery engine using PostgreSQL with the `pgvector` extension and 1,536-dimensional embeddings.
+- **Interdisciplinary Cross-Pollination:** Automatically analyzes faculty publication clusters across different colleges to identify cross-departmental synergies—for instance, connecting computer science researchers developing Arabic computational models with Arabic language professors doing digital linguistics to establish multidisciplinary grants.
+- **Targeted Industry Commercialization:** Profiles corporate sectors and maps commercial enterprise problem statements to published university research, transforming raw academic literature into actionable commercial Research Tickets («بطاقات بحثية»).
+- **17 Specialized Institutional Expert Houses (بيوت خبرة):** Grouped faculty capability matrices to structure and launch 17 university-certified consulting houses, positioning academic talent for high-value external contracts.
 
 ### 3. Tokenized Curated Sharing for External Partners
 - Developed a secure, tokenized URL dispatch system allowing university consultants to bundle curated collections of research tickets for external ministries and corporate executives.
